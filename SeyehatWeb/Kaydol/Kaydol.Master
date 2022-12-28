@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kaydol.master.cs" Inherits="SeyehatWeb.Kaydol.Kaydol" %>
+
+
+   
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+           
+
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title> Kaydol Ve Bize Katıl</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="/asset/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="/asset/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/asset/css/style.css">
+  <!-- endinject -->
+     
+  <link rel="shortcut icon" href="/asset/images/favicon.png" />
+   <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body style="height:100%">
+   <form runat="server" style="height:100%">    
+         <div class="container" style="height:50vh;display:flex;align-items:center;justify-content:center;" >
+            <div class="row">
+          <div class=" col-md-14 col-md-offset-14" style="width:100%">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading"style="height:10vh;display:flex;align-items:center;justify-content:center;">
+                         
+                   <h3 class="page-title"> Seyehat Web </h3>
+                        </div>
+              
+               <div class="forms-sample" runat="server">
+                    <div class="form-group">
+                      
+                    
+                        <asp:TextBox ID="Txtemailtel" runat="server" CssClass="form-control" placeholder=" E-posta" TextMode="Email"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                      
+                      <asp:TextBox ID="Txtad" runat="server" CssClass="form-control" placeholder="Adı "></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                      
+                      <asp:TextBox ID="TxtSoyad" runat="server" CssClass="form-control" placeholder=" Soyadı"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                     
+                      <asp:TextBox ID="Txtkullanici" runat="server" CssClass="form-control" placeholder="Kullanıcı Adı"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                      
+                       <asp:TextBox ID="Txtsifre" runat="server" CssClass="form-control" placeholder="Şifre" TextMode="Password"  ></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" ValidationExpression=".{5}.*" ControlToValidate="Txtsifre" runat="server" ErrorMessage="RegularExpressionValidator" ForeColor="Red"></asp:RegularExpressionValidator>
+                      </div>
+                    
+                   <div class="btn">
+                       <asp:Button ID="Button1" runat="server" CssClass="btn" Backcolor="Green" ForeColor="White" Text="Kaydet" OnClick="Button1_Click" />
+                   </div>
+                   <asp:Label ID="Label1" runat="server" ForeColor="Red"></asp:Label>
+                    </div>
+                 </div>
+                    </div>
+             </div>
+       </div>
+
+       <div class="container" style="height:90vh;display:flex;align-items:center;justify-content:center;" >
+            <div class="row">
+          <div class=" col-md-14 col-md-offset-14" style="width:100%">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading"style="height:10vh;display:flex;align-items:center;justify-content:center;">
+                        <img src="/asset/resim2.jpg" />
+         </div>
+         </div>
+         </div>
+         </div>
+             </div> 
+          
+       
+           
+           
+            
+         
+        
+      
+  <script src="/asset/vendors/js/vendor.bundle.base.js"></script>
+  <script src="/asset/vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src="/asset/js/off-canvas.js"></script>
+  <script src="/asset/js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="/asset/js/file-upload.js"></script>
+  <!-- End custom js for this page-->
+    </form>   
+</body>
+
+</html>
